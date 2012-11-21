@@ -22,10 +22,30 @@ if($_POST)
 th {
 	background-color: lightblue;
 }
+.head{
+	padding-bottom:30px;
+}
+.payment{
+	float:right;
+	padding-right:100px;
+	Position:relatve;
+}
+.order{
+	float:left;
+	padding-left:100px;
+	width="100"
+}
 </style>
 </head>
 <body>
-	<table border="1">
+	<div class="head">
+		<img src="restaurant_header.jpg" width="100%" height="30%" />
+
+	</div>
+	
+	<div class="order">
+	
+	<table border="1" >
 		<tr>
 			<th>Dish</th>
 			<th>Quantity</th>
@@ -69,5 +89,46 @@ th {
 		</tr>
 
 	</table>
+	</div>
+	<div class="payment">
+	<table  border="1" >
+		<tr>
+			<td>
+				Card No :
+			</td>
+			<td>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Name On Card :
+			</td>
+			<td>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Expiry Date :
+			</td>
+			<td>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				CVV2 No :
+			</td>
+			<td>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="button" name="cancel" value="cancel" />
+			</td>
+			<td>
+				<input type="submit" name="submit" value="submit" />
+			</td>
+		</tr>
+	</table>
+	</div>
 </body>
 </html>

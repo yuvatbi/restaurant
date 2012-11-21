@@ -7,6 +7,7 @@ if($_POST)
 	$mailid = $_POST['mailid'];
 	$address = $_POST['address'];
 	$phone = $_POST['phone'];
+	$_SESSION['username'] = $name;
 }
 ?>
 
@@ -26,7 +27,7 @@ if($_POST)
 	</head>
 	<body>
 		<div class="head">
-		<img src="restaurant_header.jpg" width="100%" height="35%" />
+		<img src="restaurant_header.jpg" width="100%" height="30%" />
 		<h1>
 			Welcome <?php echo $name; ?>
 		</h1>
@@ -99,6 +100,10 @@ if($_POST)
 			</tr>
 		</table>
 		<br>
+
+		<input type="hidden" name="mailid" value="<?php echo $mailid; ?>" />
+		<input type="hidden" name="address" value="<?php echo $address; ?>" />
+		<input type="hidden" name="phone" value="<?php echo $phone; ?>" />
 		<input type="submit" name="menusubmit" value="Order"/>
 		</form>
 		</div>

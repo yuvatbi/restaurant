@@ -5,7 +5,7 @@
 <title>Sign up</title>
 <style type="text/css">
 .register {
-	padding-top: 100px;
+	padding-top: 50px;
 	padding-left:400px;
 }
 
@@ -17,6 +17,10 @@
 </head>
 <body>
 
+	<div class="head">
+		<img src="restaurant_header.jpg" width="100%" height="30%" />
+
+	</div>
 	<div class="register">
 		<h1>Registration Form</h1>
 	</div>
