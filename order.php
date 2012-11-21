@@ -32,7 +32,7 @@ th {
 			<th>Total</th>
 		</tr>
 		<tr>
-			<td><?php echo $dish_name; ?>
+			<td><?php echo $dish_name[0]." ".$dish_name[1]." ".$dish_name[2]." ".$dish_name[3]; ?>
 			</td>
 			<td><?php echo $dish_quantity; ?>
 			</td>

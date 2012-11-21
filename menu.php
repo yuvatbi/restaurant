@@ -40,7 +40,7 @@ if($_POST)
 					Dish   :
 				</td>
 				<td>
-					<select multiple="multiple" name="dish">
+					<select multiple="multiple" name="dish[]">
   						<option value="chapathi">chapathi</option>
   						<option value="Dosa">Dosa</option>
   						<option value="Baati">Baati</option>
@@ -93,8 +93,8 @@ if($_POST)
 					Toppings :
 				</td>
 				<td>
-					<input type="checkbox" name="toppings" value="nuts">Nuts
-					<input type="checkbox" name="toppings" value="dryfruits">Dry Fruits					
+					<input type="checkbox" name="toppings[]" value="nuts">Nuts
+					<input type="checkbox" name="toppings[]" value="dryfruits">Dry Fruits					
 				</td>
 			</tr>
 		</table>
