@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+
+
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css"
+	href="css/bootstrap-responsive.css">
+
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+
+
+<style type="text/css">
+#position2 {
+	height: 100px;
+	background-color: lightblue;
+	margin-bottom: 20px;
+}
+
+#position3 {
+	height: 200px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.grid {
+	width: 300px;
+	height: 150px;
+	background-color: lightblue;
+	margin-bottom:30px;
+}
+.grid2 {
+	width: 200px;
+	height: 150px;
+	background-color: lightblue;
+	margin-bottom:30px;
+}
+.grid3 {
+	width: 300px;
+	height: 150px;
+	background-color: lightblue;
+	margin-bottom:30px;
+}
+.grid_inner{
+	width: 500px;
+	height: 150px;
+	background-color: lightblue;
+	margin-bottom:30px;
+}
+</style>
+</head>
+<body>
+
+	<div class="wrapper">
+
+		<div class="navbar">
+			<div class="navbar-inner">
+				<div class="container">
+					<a class="btn btn-navbar" data-toggle="collapse"
+						data-target=".nav-collapse"> <span class="icon-bar"></span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span>
+					</a>
+					<div class="nav-collapse">
+						<div class="search">
+							<form class="search pull-left">
+								<input type="text" class="search-query" placeholder="search" />
+
+							</form>
+						</div>
+						<!--  end of search -->
+						<ul class="nav">
+							<li class="active"><a href="#"> Home</a></li>
+							<li><a href="#">About </a></li>
+							<li><a href="#">Contact </a></li>
+							<li><a href="#">people </a></li>
+
+						</ul>
+						<!--  end of nav -->
+					</div>
+					<!--  end of nav collapse -->
+				</div>
+				<!--  end of container -->
+			</div>
+			<!--  end of navbar inner -->
+		</div>
+		<!--  end of navbar -->
+
+
+		<div class="row-fluid" id="position2">
+			<div class="span5">logo</div>
+			<div class="span7">Title goes here</div>
+		</div>
+
+
+		<div class="navbar">
+			<div class="navbar-inner">
+				<div class="container">
+					<a class="btn btn-navbar" data-toggle="collapse"
+						data-target=".nav-collapse"> <span class="icon-bar"></span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span>
+					</a>
+					<div class="nav-collapse">
+
+						<ul class="nav">
+							<li class="active"><a href="#"> Home</a></li>
+							<li><a href="#">About </a></li>
+							<li><a href="#">Contact </a></li>
+							<li><a href="#">people </a></li>
+
+						</ul>
+						<!--  end of nav -->
+					</div>
+					<!--  end of nav collapse -->
+				</div>
+				<!--  end of container -->
+			</div>
+			<!--  end of navbar inner -->
+		</div>
+		<!--  end of navbar -->
+
+
+		<div class="container-fluid">
+			<div id="this-carousel-id" class="carousel slide">
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="img/1.png" alt="image" />
+					</div>
+					<div class="item">
+						<img src="img/2.png" alt="image" />
+					</div>
+					<div class="item">
+						<img src="img/3.png" alt="image" />
+					</div>
+					<div class="item">
+						<img src="img/4.png" alt="image" />
+					</div>
+				</div>
+				<!--  end of carousel inner -->
+				<a class="carousel-control left" href="#this-carousel-id"
+					data-slide="prev">&lsaquo;</a> <a class="carousel-control right"
+					href="#this-carousel-id" data-slide="next">&rsaquo;</a>
+
+			</div>
+			<!--  end of carosuel id -->
+		</div>
+		<!--  end of container fluid -->
+
+		<div class="container">
+			<div class="row">
+
+				<div class="span4 grid">sdfsdfsdf</div>
+				<div class="span4 grid">sdfsdfsdf</div>
+				<div class="span4 grid">sdfsdfsdf</div>			
+
+			</div>
+			<!--  end of row -->
+		</div> <!--  end of container -->
+		
+		<div class="container">
+			<div class="row">
+
+				<div class="span3 grid2">sdfsdfsdf</div>
+				<div class="span6 grid_inner">sdfsdfsdf</div>
+				<div class="span3 grid2">sdfsdfsdf</div>
+
+			</div>
+			<!--  end of row -->
+		</div> <!--  end of container -->
+		
+		<hr/>
+		
+		<div class="container">
+			<div class="row">
+
+				<div class="span4 grid3">sdfsdfsdf</div>
+				<div class="span4 grid3">sdfsdfsdf</div>
+				<div class="span4 grid3">sdfsdfsdf</div>			
+
+			</div>
+			<!--  end of row -->
+		</div> <!--  end of container -->
+
+
+
+
+		<div class="container"></div>
+		<!--  end of container -->
+	</div>
+	<!--  end of wrapper -->
+
+	<script>
+		$(document).ready(function() {
+			$('.carousel').carousel({
+				interval : 4000
+			});
+		});
+	</script>
+
+
+</body>
+</html>
